@@ -12,24 +12,26 @@
 <body>
   <header class="main-header">
     <div class="main-header__container">
-      <div class="main-logo">
-        <a href="index.html"><img src="img/logo-2.png" width="160" height="65" alt="Логотип"></a>
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#" class="main-nav__item">Студия</a></li>
-          <li><a href="#" class="main-nav__item">Клиенты</a></li>
-          <li><a href="#" class="main-nav__item main-nav__item_active">Магазин</a></li>
-          <li><a href="#" class="main-nav__item">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="user-block">
-        <a href="#">Корзина</a>
+      <div class="main-header__top">
+        <div class="main-logo">
+          <a href="index.html"><img src="img/logo-2.png" width="160" height="65" alt="Логотип"></a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#" class="main-nav__item">Студия</a></li>
+            <li><a href="#" class="main-nav__item">Клиенты</a></li>
+            <li><a href="#" class="main-nav__item main-nav__item_active">Магазин</a></li>
+            <li><a href="#" class="main-nav__item">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a href="#">Корзина</a>
+        </div>
       </div>
       <h1 class="headline">Магазин готовых шаблонов</h1>
     </div>
   </header>
-  <main class="main-wr clearfix">
+  <main class="main-wr">
     <div class="sorting">
       <form method="get">
         <fieldset>
@@ -74,16 +76,16 @@
       </form>
     </div>
     <div class="catalog">
-      <div class="catalog__sorting clearfix">
+      <div class="catalog__sorting">
         <span>Сортировать:</span>
-        <div class="catalog__item">
-          <a class="catalog__sorting-down catalog__sorting-down_active"></a>
-          <a href="#" class="catalog__sorting-up"></a>
-        </div>
         <div class="catalog__item">
           <a href="#" class="active">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По названию</a>
+        </div>
+        <div class="catalog__item">
+          <a class="catalog__sorting-down catalog__sorting-down_active"></a>
+          <a href="#" class="catalog__sorting-up"></a>
         </div>
       </div>
       <div class="catalog__group">
@@ -164,7 +166,7 @@
         </section>
       </div>
     </div>
-    <div class="footer__container clearfix">
+    <div class="footer__container">
       <section class="footer__social">
         <a class="btn__social btn__social_vk" href="#">Вконтакте</a>
         <a class="btn__social btn__social_fb" href="#">Фейсбук</a>

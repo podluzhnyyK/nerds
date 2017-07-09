@@ -23,9 +23,13 @@ body {
   margin: auto;
 }
 
+.main-header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-logo {
   margin-top: -1px;
-  float: left;
 }
 
 .main-logo img:hover {
@@ -37,7 +41,6 @@ body {
 }
 
 .main-nav {
-  float: left;
   width: 620px;
   margin-top: 25px;
   margin-left: 200px;
@@ -89,7 +92,6 @@ body {
 }
 
 .user-block {
-  float: right;
   width: 160px;
   margin-top: 25px;
 }
@@ -262,10 +264,10 @@ body {
 
 .groups {
   padding-top: 40px;
+  display: flex;
 }
 
 .groups__item {
-  float: left;
   width: 300px;
   margin-right: 100px;
   margin-bottom: 80px;
@@ -275,12 +277,12 @@ body {
   margin-right: 0px;
 }
 
-.groups__item span {
-  display: block;
+.groups__item h3 {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   margin-top: 17px;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
@@ -345,11 +347,12 @@ body {
 .content-index {
   border-top: 2px solid #eeeeee;
   margin-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .content-index__left {
   margin-top: 70px;
-  float: left;
   width: 680px;
 }
 
@@ -393,7 +396,6 @@ body {
 .content-index__rights {
   margin-top: 35px;
   margin-right: 25px;
-  float: right;
 }
 
 .content-index__rights img {
@@ -446,6 +448,8 @@ body {
   padding: 50px 0px 0px 30px;
   border-bottom: 2px solid #eeeeee;
   border-top: 2px solid #eeeeee;
+  display: flex;
+  align-items: baseline;
 }
 
 .partners a {
@@ -565,13 +569,11 @@ body {
   width: 1200px;
   padding: 0px 20px;
   margin: auto;
+  display: flex;
 }
 
 .footer__social {
   margin-top: 69px;
-  display: inline-block;
-  vertical-align: top;
-  float: left;
   font-size: 0;
   text-decoration: none;
 }
@@ -1063,6 +1065,7 @@ input[type="checkbox"]:checked:disabled+label::after {
 
 .catalog__sorting {
   margin-bottom: 55px;
+  display: flex;
 }
 
 .catalog__sorting span {
@@ -1070,6 +1073,7 @@ input[type="checkbox"]:checked:disabled+label::after {
   line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  flex-grow: 1;
 }
 
 .catalog__item a {
@@ -1083,7 +1087,6 @@ input[type="checkbox"]:checked:disabled+label::after {
 }
 
 .catalog__item {
-  float: right;
   margin-right: 15px;
 }
 
